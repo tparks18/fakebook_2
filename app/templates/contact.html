@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{ super() }} | Contact
+{% endblock %}
+
+{% block body %}
+    <h3>Contact</h3>
+    <hr>
+    <form action="{{ url_for('main.contact') }}" method="POST">
+        <div class="form-group">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="Type your name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <select class="form-control" name="budget">
+                        <option disabled selected>Choose a budget</option>
+                        <option>$1000</option>
+                        <option>$2000</option>
+                        <option>$3000+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Type a brief message..." rows="5"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-block btn-info">Send</button>
+        </div>
+    </form>
+{% endblock %}

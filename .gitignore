@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+.env
+venv
+virtualenv
+__pycache__
+*.pyc
+.vscode
+=======
+__pycache___
+*.pyc
+.vscode
+.env
+venv
+virtualenv
+>>>>>>> 9b08ccfc94ea3142f8c24af91332b5ddff34e8a9
